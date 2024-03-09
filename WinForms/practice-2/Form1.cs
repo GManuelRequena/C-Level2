@@ -37,7 +37,7 @@ namespace practice_2
                 string age = txtBoxAge.Text;
                 string address = txtBoxAddress.Text.ToUpper();
 
-                txtBoxResult.Text = $"Apellido y Nombre: {lastName} {name}\r\nEdad: {age}\r\nDirección: {address}";
+                txtBoxResult.Text = $"Last name and Name: {lastName} {name}\r\nAge: {age}\r\nAddress: {address}";
             }
         }
 
@@ -45,7 +45,7 @@ namespace practice_2
         {
             Form messageForm = new Form
             {
-                Text = "Cierre",
+                Text = "Close",
                 Size = new Size(300, 100),
                 StartPosition = FormStartPosition.CenterParent // Asegura que la ventana se abra encima de la ventana actual
 
@@ -53,7 +53,7 @@ namespace practice_2
 
             Label messageLabel = new Label
             {
-                Text = "Gracias por usar la aplicacion.",
+                Text = "Thanks for using the app.",
                 Dock = DockStyle.Fill,
                 TextAlign = ContentAlignment.MiddleCenter
             };
@@ -113,6 +113,11 @@ namespace practice_2
             label.ForeColor = Color.Black;
             textBox.ForeColor = Color.Black;
             textBox.Text = string.Empty;
+        }
+
+        private void txtBoxAddress_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

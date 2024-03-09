@@ -92,6 +92,7 @@
             // 
             resources.ApplyResources(this.txtBoxAddress, "txtBoxAddress");
             this.txtBoxAddress.Name = "txtBoxAddress";
+            this.txtBoxAddress.TextChanged += new System.EventHandler(this.txtBoxAddress_TextChanged);
             // 
             // txtBoxResult
             // 
